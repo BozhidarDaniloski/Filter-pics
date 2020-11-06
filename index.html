@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Filter_Pictures</title>
+  </head>
+  <body>
+    <h2>My Collection</h2>
+
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for names.."
+      title="Type in a name"
+    />
+
+    <div class="container"></div>
+    <ul class="filter-menu">
+      <li data-target="all">All</li>
+      <li data-target="Bikes">Bikes</li>
+      <li data-target="Cars">Cars</li>
+    </ul>
+
+    <ul id="myUL" class="filter-item">
+      <li data-item="Bikes">
+        <img src="./img/bike1.jpg" /><a href="#">Ninja</a>
+      </li>
+      <li data-item="Bikes">
+        <img src="./img/bike2.jpg" /><a href="#">Kawasaki</a>
+      </li>
+
+      <li data-item="Bikes">
+        <img src="./img/bike3.jpg" /><a href="#">Suzuki</a>
+      </li>
+      <li data-item="Cars"><img src="./img/car1.jpg" /><a href="#">Bmw</a></li>
+
+      <li data-item="Cars">
+        <img src="./img/car2.jpg" /><a href="#">Bmw m4</a>
+      </li>
+      <li data-item="Cars">
+        <img src="./img/car3.jpg" /><a href="#">Bmw coupe</a>
+      </li>
+    </ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
